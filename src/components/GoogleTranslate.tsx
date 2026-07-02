@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 export default function GoogleTranslate() {
     useEffect(() => {
         // Browser language detection and auto-switch logic
-        const userLang = navigator.language || (navigator as any).userLanguage;
+        const userLang = navigator.language || (navigator as Navigator & { userLanguage?: string }).userLanguage;
         const isJapanese = userLang && userLang.toLowerCase().startsWith('ja');
 
         if (!isJapanese) {
