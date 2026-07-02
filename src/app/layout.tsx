@@ -31,7 +31,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <GoogleTranslate />
-        <LanguageSwitcher />
         <Script src="https://chat-fkm8cdt6n-farangdevs-projects.vercel.app/api/embed/0d05d582-c28e-429b-9b26-dc80a07d7ea2.js" strategy="afterInteractive" />
         {children}
       </body>
