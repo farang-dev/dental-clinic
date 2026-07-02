@@ -94,6 +94,8 @@ export default function Home() {
         </div>
       </motion.header>
 
+      <script src="https://chat-fkm8cdt6n-farangdevs-projects.vercel.app/api/embed/0d05d582-c28e-429b-9b26-dc80a07d7ea2.js" async />
+
       {/* Hero Section */}
       <motion.section 
         className="relative py-20 pt-32 px-4 sm:px-6 lg:px-8"

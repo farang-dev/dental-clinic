@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import GoogleTranslate from "@/components/GoogleTranslate";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -32,10 +31,6 @@ export default function RootLayout({
       >
         <GoogleTranslate />
         {children}
-        <Script
-          src="https://chat-fkm8cdt6n-farangdevs-projects.vercel.app/api/embed/0d05d582-c28e-429b-9b26-dc80a07d7ea2.js"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );
