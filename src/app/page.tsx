@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -9,6 +10,16 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Phone, Mail, MapPin, Clock, Star, Heart, Shield, Users } from 'lucide-react';
 
 export default function Home() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://chat-fkm8cdt6n-farangdevs-projects.vercel.app/api/embed/0d05d582-c28e-429b-9b26-dc80a07d7ea2.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     animate: { opacity: 1, y: 0 },
@@ -93,8 +104,6 @@ export default function Home() {
           </div>
         </div>
       </motion.header>
-
-      <script src="https://chat-fkm8cdt6n-farangdevs-projects.vercel.app/api/embed/0d05d582-c28e-429b-9b26-dc80a07d7ea2.js" async />
 
       {/* Hero Section */}
       <motion.section 
