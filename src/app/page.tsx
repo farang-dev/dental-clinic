@@ -12,7 +12,7 @@ import { Phone, Mail, MapPin, Clock, Star, Heart, Shield, Users } from 'lucide-r
 export default function Home() {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://chat-fkm8cdt6n-farangdevs-projects.vercel.app/api/embed/0d05d582-c28e-429b-9b26-dc80a07d7ea2.js';
+    script.src = 'https://chat-pi-ivory-40.vercel.app/api/embed/0d05d582-c28e-429b-9b26-dc80a07d7ea2.js';
     script.async = true;
     document.body.appendChild(script);
     return () => {
